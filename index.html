@@ -1,25 +1,78 @@
 <!doctype html>
 <html>
   <head>
-    <meta charset=utf-8>
-    <meta http-equiv=X-UA-Compatible content=chrome=1>
-    <title>kern by lawrennd</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>optimi by lawrennd</title>
 
-    <link rel=stylesheet href=/optimi/stylesheets/styles.css>
-    <link rel=stylesheet href=/optimi/stylesheets/github-light.css>
-    <meta name=viewport content=width=device-width, initial-scale=1, user-scalable=no>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
     <!--[if lt IE 9]>
-    <script src=//html5shiv.googlecode.com/svn/trunk/html5.js></script>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
-    <title>optimi software download</title>
   </head>
   <body>
-  <h2>optimi software</h2>
-  <p>From this page you can download different historic versions of the <b>optimi</b> software. You can also find the main <b>optimi</b> software page <a href="/optimi/">here</a> and you can find the code on GitHub <a href="https://github.com/lawrennd/optimi/">here</a>.</p>
-    <p>Download the optimi software using the links below.</p>
-      <a href="./.git/">./.git/</a><br>
-      <a href="./javascripts/">./javascripts/</a><br>
-      <a href="./stylesheets/">./stylesheets/</a><br>
-      <a href="./params.json">./params.json</a><br>
+    <div class="wrapper">
+      <header>
+        <h1>optimi</h1>
+        <p>MATLAB helper functions and constraint functions for optimization.</p>
+
+        <p class="view"><a href="https://github.com/lawrennd/optimi">View the Project on GitHub <small>lawrennd/optimi</small></a></p>
+
+
+        <ul>
+          <li><a href="https://github.com/lawrennd/optimi/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/lawrennd/optimi/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/lawrennd/optimi">View On <strong>GitHub</strong></a></li>
+        </ul>
+      </header>
+      <section>
+        <h1>
+<a id="matlab-optimi-toolbox" class="anchor" href="#matlab-optimi-toolbox" aria-hidden="true"><span class="octicon octicon-link"></span></a>Matlab Optimi Toolbox</h1>
+
+<p>This page describes the optimi toolbox for MATLAB available for <a href="http://www.cs.man.ac.uk/neill-bin/software/downloadForm.cgi?toolbox=optimi">download here</a>.</p>
+
+<h3>
+<a id="dependencies" class="anchor" href="#dependencies" aria-hidden="true"><span class="octicon octicon-link"></span></a>Dependencies</h3>
+
+<p>The optimi toolbox depends on the <a href="/ndlutil/downloadFiles/"><code>ndlutil</code> toolbox</a>. You can use your user name and password for accessing these toolboxes.</p>
+
+<h3>
+<a id="release-information" class="anchor" href="#release-information" aria-hidden="true"><span class="octicon octicon-link"></span></a>Release Information</h3>
+
+<p>Current release is 0.132.</p>
+
+<p>Included a function to return the default functions to be used for particular constraints and a function to return the default optimiser.</p>
+
+<p>Added wrappers for using Carl Rasmussen's conjugate gradient code.</p>
+
+<p>This toolbox allows computation of several different non-linearities and associated conversions and their gradients.</p>
+
+<p>There are several kernels implemented, the ones that are being maintained for the latest release are:</p>
+
+<p><code>exp sigmoid negLogLogit</code></p>
+
+<p><code>exp</code> constrains a parameter to be positive through exponentiatiation. <code>sigmoid</code> constrains a parameter to be between 0 and 1 through the sigmoid function and <code>negLogLogit</code> constrains a parameter to be positive through the function <code>log(1+exp(x))</code>. In much of the code based on this we prefer <code>negLogLogit</code> to <code>exp</code> as it is better behaved for large <code>x</code>.</p>
+
+<p>Page last modified on Fri Jan 5 22:19:06 GMT 2007.</p>
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="https://github.com/lawrennd">lawrennd</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+              <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+          </script>
+          <script type="text/javascript">
+            try {
+              var pageTracker = _gat._getTracker("UA-62968536-1");
+            pageTracker._trackPageview();
+            } catch(err) {}
+          </script>
+
   </body>
 </html>
